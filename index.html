@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Business Pitch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/logo-business.png" alt="BizPitch" />
+      <a href="/"><span>Business</span>Pitch</a>
+    </header>
+    <main>
+      <!-- The Setup -->
+      <section id="setup-container">
+        <div class="setup-inner">
+          <img
+            style="filter: drop-shadow(3px 2px 3px #fff)"
+            src="/images/bizboss3.png"
+          />
+          <div class="speech-bubble-ai" id="speech-bubble-ai">
+            <p id="Biz-boss-text">
+              Give me a one-sentence concept and I'll give you a captivating
+              business pitch and a stunning brand Logo
+            </p>
+          </div>
+        </div>
+        <div
+          class="setup-inner setup-input-container"
+          id="setup-input-container"
+        >
+          <textarea
+            id="setup-textarea"
+            placeholder="To sell valcro nylon wallets"
+          ></textarea>
+          <button class="send-btn" id="send-btn" aria-label="send">
+            <img src="images/send-btn-icon.png" alt="send" />
+          </button>
+        </div>
+      </section>
+      <!-- The Output -->
+      <section class="output-container" id="output-container">
+        <div id="output-img-container" class="output-img-container"></div>
+        <h1 id="output-title"></h1>
+        <h2 id="output-stars"></h2>
+        <p id="output-text"></p>
+      </section>
+    </main>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
